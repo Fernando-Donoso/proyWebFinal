@@ -1,0 +1,227 @@
+
+header{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #000;
+  align-items: center;
+  padding: 20px;
+}
+
+header nav ul{
+  list-style-type: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 7px;
+}
+
+header nav ul li a{
+  color: #0d6efd;
+  font-family:'Times New Roman', Times, serif;
+  text-decoration: none;
+}
+
+.h3{
+  color: #0d6efd;
+  font-family:'Times New Roman', Times, serif;
+  text-decoration: none;
+
+}
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+
+.carousel {
+  position: relative; 
+}
+
+.d-block w-50 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/***********************************************/
+/*       Flexbox Pagina Informacion-Proveedores */
+/***********************************************/
+
+.flex-container{
+  border: 1px solid black;
+  background: rgb(218, 204, 148);
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  height: 500px;
+}
+
+.flex-nomprov{
+  background-color: lightblue;
+  flex-grow: 1;
+
+}
+
+.flex-dirprov{
+  background-color: lightcoral;
+  flex-basis: 60%;
+
+}
+
+.flex-prodprov{
+  background-color: lightgreen;
+  flex-grow: 1;
+
+}
+
+.parraf_info-prov {
+  color: #0d6efd;
+  font-family:'Times New Roman', Times, serif;
+  text-decoration: none;
+  text-align: justify;
+
+}
+
+
+
+/***********************************************/
+/*       Grid */
+/***********************************************/
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  border-top: 2px solid aqua;
+  border-right: 2px solid aqua;
+}
+
+.grid > span {
+  padding: 8px 4px; 
+  border-left: 2px solid aqua;
+  border-bottom: 2px solid  aqua;
+}
+
+.columnas{  
+  text-align: center;
+}
+
+/* Estilo para todos los párrafos */
+p {
+  color: #0d6efd; /*  /* Cambia el color del texto a rojo */
+  text-align: center;
+  font-size: 16px; /* Tamaño de fuente */
+  font-family: Arial, sans-serif; /* Fuente del texto */
+  line-height: 1.5; /* Espaciado entre líneas */
+  margin-bottom: 20px; /* Margen inferior */
+
+}
+
+
+/* Estilo para los encabezados h1 */
+section h1 {
+    text-align: center;
+    color: blue; /* Cambia el color del texto a azul */
+    font-size: 24px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilo para los enlaces */
+a {
+    color: #0d6efd; /* Cambia el color de los enlaces a verde */
+    text-decoration: overline,underline; /* Quita la subrayado de los enlaces */
+}
+
+.centrar-imagen {
+    display: flex;
+    justify-content: center;
+}
+
+table, th, td {
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+button {
+    background-color: rgb(218, 204, 148);
+}  
+
+.mapadir {
+    display: flex;
+    justify-content: center;
+}
+
+.botonVolver {
+    float: right;
+}
+
+div.art1 {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #449;
+    color: #fff;
+    padding: 15px;
+  }
+  
+  div.art1 img.izquierda-art1 {
+    float: left;
+    margin-right: 15px;
+  }
+
+  div.art2 {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #449;
+    color: #fff;
+    padding: 15px;
+  }
+
+  div.art2 img.izquierda-art2 {
+    float: left;
+    margin-right: 15px;
+  }
+
+  div.art3 {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #449;
+    color: #fff;
+    padding: 15px;
+  }
+
+  div.art3 img.izquierda-art3 {
+    float: left;
+    margin-right: 15px;
+  }
+
+  div.art4 {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #449;
+    color: #fff;
+    padding: 15px;
+  }
+
+  div.art4 img.izquierda-art4 {
+    float: left;
+    margin-right: 15px;
+  }
+
+  div.reset {
+    clear: both;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
