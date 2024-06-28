@@ -1,7 +1,194 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(108, 86, 249, 0.622);
+}
+
+h1 {
+  color: blue;
+}
+
+.centrar-imagen {
+  display: flex;
+  margin: 0 auto;
+}
+
+/* Estilo para todos los párrafos */
+p {
+  color: #0d6efd; /*  /* Cambia el color del texto a rojo */
+  text-align: center;
+  font-size: 16px;
+  /* Tamaño de fuente más grande */
+  font-family: Arial, sans-serif; /* Fuente del texto */
+  line-height: 1.5; /* Espaciado entre líneas */
+  margin-bottom: 20px; /* Margen inferior */
+}
+p button {
+  background-color: rgb(218, 204, 148);
+}
+p .botonVolver {
+  float: right;
+}
+
+section {
+  margin: 20px 0;
+  text-align: center;
+  color: blue; /* Cambia el color del texto a azul */
+  font-size: 24px;
+  /* Tamaño de fuente más grande */
+  font-weight: bold; /* Texto en negrita */
+  font-family: "Times New Roman", Times, serif; /* Fuente del texto */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  text-decoration: underline; /* Subrayado */
+}
+section h1 {
+  text-align: center;
+  color: blue; /* Cambia el color del texto a azul */
+  font-size: 24px;
+  /* Tamaño de fuente más grande */
+  font-weight: bold; /* Texto en negrita */
+}
+section .botonVolver {
+  float: right;
+}
+
+/*******************************************/
+/*       Fade Bs-carousel articulo.html ****/
+/*******************************************/
+.carouselExampleCaptions .carousel slide .carousel-indicators {
+  bottom: -50px;
+  position: relative;
+}
+.carouselExampleCaptions .carousel slide .carousel-inner .carousel-item active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carouselExampleCaptions .carousel slide .carousel-inner .carousel-item active .d-block w-10, .carouselExampleCaptions .carousel slide .carousel-inner .carousel-item active .carousel-item w-10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carouselExampleCaptions .carousel slide .carousel-inner .carousel-item active .carousel-caption, .carouselExampleCaptions .carousel slide .carousel-inner .carousel-item active .carousel-item {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.carouselExampleCaptions .carousel slide .carousel-inner .carousel-item active .carousel-caption .d-none d-md-block, .carouselExampleCaptions .carousel slide .carousel-inner .carousel-item active .carousel-item .d-none d-md-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carouselExampleCaptions .carousel slide .carousel-inner .carousel-item active .carousel-caption .d-md-block, .carouselExampleCaptions .carousel slide .carousel-inner .carousel-item active .carousel-item .d-md-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carouselExampleCaptions .carousel slide .carousel-control-prev, .carouselExampleCaptions .carousel slide .carousel-control-next {
+  width: 5%;
+}
+.carouselExampleCaptions .carousel slide .carousel-control-prev .carousel-control-prev-icon, .carouselExampleCaptions .carousel slide .carousel-control-prev .carousel-control-next-icon, .carouselExampleCaptions .carousel slide .carousel-control-next .carousel-control-prev-icon, .carouselExampleCaptions .carousel slide .carousel-control-next .carousel-control-next-icon {
+  background-color: black;
+}
+.carouselExampleCaptions .carousel slide .carousel-control-next-icon, .carouselExampleCaptions .carousel slide .carousel-control-prev-icon {
+  background-color: black;
+}
+.carouselExampleCaptions .carousel slide .carousel-control-next-icon .carousel-control-next-icon, .carouselExampleCaptions .carousel slide .carousel-control-prev-icon .carousel-control-next-icon {
+  background-color: black;
+}
+
+/***********************************************/
+/*       Flexbox Pagina Info-Proveedores.html */
+/***********************************************/
+.flex-container {
+  border: 1px solid black;
+  background: rgb(218, 204, 148);
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  height: 500px;
+}
+.flex-container .flex-nomprov {
+  background-color: lightblue;
+  flex-grow: 1;
+}
+.flex-container .flex-nomprov .h3, .flex-container .flex-nomprov .flex-prodprov, .flex-container .flex-nomprov .flex-dirprov {
+  color: #0d6efd;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+}
+.flex-container .flex-nomprov .h3 .parraf_info-prov, .flex-container .flex-nomprov .flex-prodprov .parraf_info-prov, .flex-container .flex-nomprov .flex-dirprov .parraf_info-prov {
+  color: #0d6efd;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  text-align: justify;
+}
+.flex-container .flex-nomprov .flex-dirprov {
+  background-color: lightcoral;
+  flex-basis: 60%;
+  flex-grow: 1;
+}
+.flex-container .flex-prodprov {
+  background-color: lightgreen;
+  flex-grow: 1;
+}
+
+.gallery img:hover {
+  transform: scale(1.2);
+}
+
+/***********************************************/
+/*       Grid */
+/***********************************************/
+.gridProveedores {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-gap: 20px;
+  align-items: center;
+  animation: change-color 2s infinite;
+}
+.gridProveedores div {
+  border: 1px solid #000;
+  padding: 10px;
+}
+.gridProveedores div strong {
+  font-weight: bold;
+}
+.gridProveedores div strong .columnasLabel {
+  text-align: center;
+  font-weight: bold;
+}
+
+@keyframes change-color {
+  from {
+    background: rgb(176, 109, 109);
+  } /* Primer fotograma */
+  to {
+    background: rgb(132, 147, 132);
+  } /* Segundo y último fotograma */
+}
+table, th, td {
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 10px;
+}
+table .th, th .th, td .th {
+  background-color: #f2f2f2;
+}
+table .td, th .td, td .td {
+  background-color: #f2f2f2;
 }
 
 header {
@@ -11,17 +198,79 @@ header {
   align-items: center;
   padding: 20px;
 }
-header nav ul {
+header nav, header div .navbar {
+  background-image: linear-gradient(to right, rgb(214, 84, 127), rgb(226, 226, 14));
+}
+header nav ul, header div .navbar ul {
   list-style-type: none;
   display: flex;
 }
-header nav ul li {
+header nav ul li, header div .navbar ul li {
   margin: 7px;
 }
-header nav ul li a {
+header nav ul li a, header div .navbar ul li a {
   color: #0d6efd;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Impact, sans-serif;
   text-decoration: none;
+}
+header h3 {
+  color: #0d6efd;
+  font-family: Impact, sans-serif;
+  text-decoration: none;
+}
+header div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header div nav ul, header div .navbar ul {
+  list-style-type: none;
+  display: flex;
+}
+header div nav ul li, header div .navbar ul li {
+  margin: 7px;
+}
+header div nav ul li a, header div .navbar ul li a {
+  color: #0d6efd;
+  font-family: Impact, sans-serif;
+  text-decoration: none;
+}
+header div .navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header div .navbar h3 {
+  color: #0d6efd;
+  font-family: Impact, sans-serif;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar-nav .nav-item {
+  margin: 7px;
+}
+.navbar-nav .nav-item .nav-link {
+  color: #0d6efd;
+  font-family: Impact, sans-serif;
+  text-decoration: none;
+}
+
+.logo-menu {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
