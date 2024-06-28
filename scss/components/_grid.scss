@@ -1,0 +1,30 @@
+
+/***********************************************/
+/*       Grid */
+/***********************************************/
+
+.gridProveedores{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 20px;
+    align-items: center;
+    
+        div {
+            border: 1px solid #000;
+            padding: 10px;
+            strong{
+                font-weight: bold;
+                .columnasLabel{
+                    text-align: center;
+                    font-weight: bold;
+                }
+            }
+        }
+        animation: change-color 2s infinite;
+    }
+
+    @keyframes change-color {
+        from { background: rgb(176, 109, 109); }  /* Primer fotograma */
+        to { background: rgb(132, 147, 132); }  /* Segundo y último fotograma */
+      }
+

@@ -1,0 +1,48 @@
+
+
+
+/***********************************************/
+/*       Flexbox Pagina Info-Proveedores.html */
+/***********************************************/
+.flex-container{
+    border: 1px solid black;
+    background: rgb(218, 204, 148);
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    height: 500px;    
+        .flex-nomprov{
+            background-color: lightblue;
+            flex-grow: 1;
+                .h3{
+                    color: #0d6efd;
+                    font-family:'Times New Roman', Times, serif;
+                    text-decoration: none;
+                    .parraf_info-prov {
+                        color: #0d6efd;
+                        font-family:'Times New Roman', Times, serif;
+                        text-decoration: none;
+                        text-align: justify;                      
+                      }                     
+                         
+                }
+            
+        .flex-dirprov{
+            background-color: lightcoral;
+            flex-basis: 60%;
+            flex-grow: 1;
+            @extend .h3;
+            }
+        }
+
+        .flex-prodprov{
+            background-color: lightgreen;
+            flex-grow: 1;
+            @extend .h3;
+        }
+
+    }
+
+
